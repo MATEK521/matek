@@ -79,7 +79,7 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.5s ease; /* eff transiction */
     animation: scaleUp 2s ease; /* dodanie animacji kat */
-    max-width: 1200px; /* Set the maximum width for each item */
+    width: 1200px; /* Set the maximum width for each item */
     margin: 20px auto; /* Add some margin for better spacing and centering */
     display: block; /* Make the items display as block elements */
 }
