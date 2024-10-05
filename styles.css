@@ -1,0 +1,175 @@
+body {
+    font-family: 'Pacifico', cursive; /* czcionka reczna */
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* ciemnoszare tlo */
+    transition: background-color 0.5s ease; /*  transition efekt */
+    animation: fadeIn 2s ease; /* efekt anim */
+}
+
+header {
+    background-color: #2f2f2f; /* ciemno szary */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    transition: background-color 0.5s ease; /*efekt transition */
+    animation: slideIn 2s ease; /* ef anim */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.5s ease; /* efekt transition */
+    animation: slideIn 2s ease; /*ef anim */
+}
+
+nav li {
+    margin-right: 20px;
+    transition: transform 0.5s ease; /* t eff */
+    animation: scaleUp 2s ease; /* anim eff */
+}
+
+.nav-box {
+    background-color: #fff; /* biale tlo */
+    color: #333; /* ciemnoszary tekst */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; /*rogi okragle */
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.5s ease, border 0.5s ease; /* t rff */
+    animation: scaleUp 2s ease; /* anim eff */
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-box:hover {
+    background-color: #eee; /* jasnoszare tlo */
+    transform: scale(1.1); /* skalowanie */
+    border: 2px solid #333; /* border */
+    animation: borderAnimation 0.5s ease; /* anim eff */
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: #fff;
+    }
+    100% {
+        border-color: #333;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    transition: transform 0.5s ease; /* add transition effect */
+    animation: scaleUp 2s ease; /* add animation effect */
+}
+
+section {
+    border-radius: 24px;
+    background-color: #fff; /* biale tlo */
+    padding: 2em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease; /* eff transiction */
+    animation: scaleUp 2s ease; /* dodanie animacji kat */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; /* dark gray text */
+    transition: transform 0.5s ease; /* add transition effect */
+    animation: scaleUp 2s ease; /* add animation effect */
+}
+
+img {
+    width: 100%;
+    height: calc(100% * 9/16); /* proporcja 16:9 */
+    object-fit: cover;
+    margin-bottom:  20px;
+    border-radius: 24px; /* add border radius */
+    transition: transform 0.5s ease; /* add transition effect */
+    animation: scaleUp 2s ease; /* add animation effect */
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.5s ease; /* add transition effect */
+    animation: scaleUp 2s ease; /* add animation effect */
+}
+
+li {
+    margin-bottom: 20px;
+    transition: transform 0.5s ease; /* add transition effect */
+    animation: scaleUp 2s ease; /* add animation effect */
+}
+
+footer {
+    background-color: #2f2f2f; /* dark gray */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+    transition: background-color 0.5s ease; /* add transition effect */
+    animation: slideIn 2s ease; /* add animation effect */
+}
+
+button {
+    background-color: #333; /* dark gray */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 34px; /* add border radius */
+    cursor: pointer;
+}
+
+ .scroll-to {
+    background-color: #333; /* dark gray */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 24px; /* add border radius */
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.5s ease; /* add transition effect */
+}
+
+.scroll-to:hover {
+    background-color: #eee; /* light gray on hover */
+    transform: scale(1.1); /* add scale effect */
+}
+
+/* add animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
