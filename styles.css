@@ -79,7 +79,7 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.5s ease; /* eff transiction */
     animation: scaleUp 2s ease; /* dodanie animacji kat */
-    width: 300px; /* Set the uniform width for each item */
+    width: 1200px; /* Set the uniform width for each item */
     margin: 20px; /* Add some margin for better spacing */
     display: inline-block; /* Make the items display inline */
 }
