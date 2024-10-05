@@ -5,18 +5,18 @@ body {
     background-color: #333; /* ciemnoszare tlo */
     transition: background-color 0.5s ease; /*  transition efekt */
     animation: fadeIn 2s ease; /* efekt anim */
-  }
-  
-  header {
+}
+
+header {
     background-color: #2f2f2f; /* ciemno szary */
     color: #fff;
     padding: 1em;
     text-align: center;
     transition: background-color 0.5s ease; /*efekt transition */
     animation: slideIn 2s ease; /* ef anim */
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -24,15 +24,15 @@ body {
     justify-content: space-between;
     transition: transform 0.5s ease; /* efekt transition */
     animation: slideIn 2s ease; /*ef anim */
-  }
-  
-  nav li {
+}
+
+nav li {
     margin-right: 20px;
     transition: transform 0.5s ease; /* t eff */
     animation: scaleUp 2s ease; /* anim eff */
-  }
-  
-  .nav-box {
+}
+
+.nav-box {
     background-color: #fff; /* biale tlo */
     color: #333; /* ciemnoszary tekst */
     padding: 10px 20px;
@@ -44,34 +44,34 @@ body {
     animation: scaleUp 2s ease; /* anim eff */
     border: 2px solid #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .nav-box:hover {
+}
+
+.nav-box:hover {
     background-color: #eee; /* jasnoszare tlo */
     transform: scale(1.1); /* skalowanie */
     border: 2px solid #333; /* border */
     animation: borderAnimation 0.5s ease; /* anim eff */
-  }
-  
-  @keyframes borderAnimation {
+}
+
+@keyframes borderAnimation {
     0% {
-      border-color: #fff;
+        border-color: #fff;
     }
     100% {
-      border-color: #333;
+        border-color: #333;
     }
-  }
-  
-  main {
+}
+
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2em;
     transition: transform 0.5s ease; /* add transition effect */
     animation: scaleUp 2s ease; /* add animation effect */
-  }
-  
-  section {
+}
+
+section {
     border-radius: 24px;
     background-color: #fff; /* biale tlo */
     padding: 2em;
@@ -79,69 +79,136 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.5s ease; /* eff transiction */
     animation: scaleUp 2s ease; /* dodanie animacji kat */
-  }
-  
-  h1 {
+}
+
+h1 {
     font-size: 24px;
     margin-bottom: 10px;
     color: #333; /* dark gray text */
     transition: transform 0.5s ease; /* add transition effect */
     animation: scaleUp 2s ease; /* add animation effect */
-  }
-  
-  h2 {
+}
+
+h2 {
     font-size: 16px;
     margin-bottom: 10px;
     color: #333; /* dark gray text */
     transition: transform 0.5s ease; /* add transition effect */
     animation: scaleUp 2s ease; /* add animation effect */
-  }
-  
-  img {
+}
+
+img {
     width: 100%;
     height: calc(100% * 9/16); /* proporcja 16:9 */
     object-fit: cover;
-    margin-bottom: 20px;
+    margin-bottom:  20px;
     border-radius: 24px; /* add border radius */
     transition: transform 0.5s ease; /* add transition effect */
     animation: scaleUp 2s ease; /* add animation effect */
-  }
-  
-  ul {
+}
+
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
     transition: transform 0.5s ease; /* add transition effect */
     animation: scaleUp 2s ease; /* add animation effect */
-  }
-  
-  li {
+}
+
+li {
     margin-bottom: 20px;
-    transition: transform 0. 5s ease; /* add transition effect */
-    animation: scaleUp 2s ease; /* add animation effect */
-  }
-  
-  a {
-    text-decoration: none;
-    color: #333; /* dark gray text */
     transition: transform 0.5s ease; /* add transition effect */
     animation: scaleUp 2s ease; /* add animation effect */
+}
+
+footer {
+    background-color: #2f2f2f; /* dark gray */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+    transition: background-color 0.5s ease; /* add transition effect */
+    animation: slideIn 2s ease; /* add animation effect */
+}
+
+button {
+    background-color: #333; /* dark gray */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 34px; /* add border radius */
+    cursor: pointer;
+}
+
+ .scroll-to {
+    background-color: #333; /* dark gray */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 24px; /* add border radius */
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.5s ease; /* add transition effect */
+}
+
+.scroll-to:hover {
+    background-color: #eee; /* light gray on hover */
+    transform: scale(1.1); /* add scale effect */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
-  a:hover {
-    color: #666; /* dark gray text on hover */
-    transform: scale(1.1); /* scale on hover */
+  .gallery img {
+    width: 30%; /* adjust the width to your liking */
+    margin: 10px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.1);
   }
   
   /* Make it responsive for mobile devices */
   @media only screen and (max-width: 768px) {
-    img {
-      height: calc(100% * 9/16); /* proporcja 16:9 */
+    .gallery img {
+      width: 45%; /* adjust the width for mobile devices */
     }
   }
   
   @media only screen and (max-width: 480px) {
-    img {
-      height: calc(100% * 9/16); /* proporcja 16:9 */
+    .gallery img {
+      width: 90%; /* adjust the width for smaller mobile devices */
     }
   }
+/* add animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
