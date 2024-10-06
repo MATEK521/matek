@@ -1,4 +1,3 @@
-
 <!-- wersja strony: 1.2 [dodaj projekty [2] oraz zdjecia![brakuje ich 12]]-->
 <!DOCTYPE html>
 <html lang="pl">
@@ -7,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortfolioMD</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-    <header>
+    <header class="animate__animated animate__fadeInDown">
         <nav>
             <ul>
-                <li><a href="#about" class="nav-box">O mnie</a></li>
-                <li><a href="#projects" class="nav-box">Projekty IT</a></li>
-                <li><a href="#zdjecia" class="nav-box">Portfolio fotograficzne</a></li>
-                <li><a href="#contact" class="nav-box">Kontakt</a></li>
+                <li><a href="#about" class="nav-box animate__animated animate__pulse animate__infinite">O mnie</a></li>
+                <li><a href="#projects" class="nav-box animate__animated animate__pulse animate__infinite">Projekty IT</a></li>
+                <li><a href="#zdjecia" class="nav-box animate__animated animate__pulse animate__infinite">Portfolio fotograficzne</a></li>
+                <li><a href="#contact" class="nav-box animate__animated animate__pulse animate__infinite">Kontakt</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="about">
+        <section id="about" class="animate__animated animate__fadeIn">
             <h1>O mnie</h1>
             <h2>Hmm...Może coś na początek?</h2>
             <p>No dobrze, zacznijmy od tego, że mam na imię Mateusz. 😊 Jestem pełen energii i zawsze gotowy do działania. Moja pasja do fotografii i WebDevelopingu jest nieograniczona! Uwielbiam odkrywać nowe sposoby na uchwycenie piękna świata i tworzenie innowacyjnych stron internetowych..</p>
@@ -36,7 +36,7 @@
             <p>...jestem pełen optymizmu i wiary w siebie.👌 Wierzę, że wszystko jest możliwe, jeśli tylko się tego chce.😏 Moja pasja i determinacja są moimi największymi atutami.😉</p>
             <button class="scroll-to" data-target="#projects">Przewiń do projektów</button>
         </section>
-        <section id="projects">
+        <section id="projects" class="animate__animated animate__fadeIn">
             <h1>Moje projekty</h1>
             <h2>IT/WebDev</h2>
             <ul>
@@ -56,7 +56,7 @@
             <button class="scroll-to" data-target="#zdjecia">Przewiń do Zdjęć</button>
         </section>
         
-        <section id="zdjecia">
+        <section id="zdjecia" class="animate__animated animate__fadeIn">
             <h1>Zdjęcia</h1>
             <h2>Prosze nie bądźcie dla mnie oschli, dopiero zaczynam z fotografia !</h2>
             <div class="gallery">
@@ -84,7 +84,7 @@
             <button class="scroll-to" data-target="#contact">Przewiń do Kontaktu</button>
           </section>
 
-    <section id="contact">
+    <section id="contact" class="animate__animated animate__fadeIn">
         <h1>Skontaktuj się ze mną</h1>
         <p>Skontaktuj się ze mną aby omówić współpracę ,lub poprosić o poradę w IT /Fotografii.</p>
         <h2>Social Media:</h2>
@@ -113,8 +113,8 @@
     <button class="scroll-to" data-target="#about">Przewiń do "O mnie"</button>
 </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Projekt i wykonanie Mateusz Dymowski</p> 
+    <footer class="animate__animated animate__fadeInUp">
+        <p>© 2024 Projekt i wykonanie Mateusz Dymowski</p> 
     </footer>
     <script src="script.js"></script>
 </body>
