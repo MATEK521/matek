@@ -270,3 +270,74 @@ button {
         transform: scale(1);
     }
 }
+
+#intro {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(45deg, #333, #2f2f2f);
+    color: #fff;
+}
+
+.intro-content {
+    max-width: 800px;
+}
+
+.intro-title {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: slideInDown 1s ease;
+}
+
+.intro-text {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    animation: slideInUp 1s ease 0.5s both;
+}
+
+.intro-icons {
+    font-size: 2em;
+}
+
+.intro-icons i {
+    margin: 0 15px;
+    animation: bounceIn 1s ease 1s both;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
